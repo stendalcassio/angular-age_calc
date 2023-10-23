@@ -1,0 +1,41 @@
+<div class="card__container">
+  <form (ngSubmit)="onFormSubmit($event)">
+    <div class="card__info">
+      <app-input
+        labelText="Year"
+        labelFor="Year"
+        inputId="Year"
+        inputName="Year"
+        inputPlaceholder="YYYY"
+      ></app-input>
+      <app-input
+        labelText="Month"
+        labelFor="Month"
+        inputId="Month"
+        inputName="Month"
+        inputPlaceholder="MM"
+      ></app-input>
+      <app-input
+        labelText="Day"
+        labelFor="Day"
+        inputId="Day"
+        inputId="Day"
+        inputName="Day"
+        inputPlaceholder="DD"
+      ></app-input>
+    </div>
+    <div class="card__sender">
+      <div class="card__sender__content">
+        <hr />
+        <div class="card__button">
+          <button><img src="assets/icon-arrow.svg" alt="enviar" /></button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="card__results">
+    <app-card-info dateInfo="years" dateTime="{{ dateTime }}"></app-card-info>
+    <app-card-info dateInfo="months" dateTime="{{ dateTime }}"></app-card-info>
+    <app-card-info dateInfo="days" dateTime="{{ dateTime }}"></app-card-info>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+
+
+.card-info__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-info__content span {
+  color: #844DFF;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.card-info__content p {
+  font-size: 5rem;
+  font-weight: 800;
+}
