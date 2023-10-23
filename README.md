@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# AgeCalculator
+# Age Calculator
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
@@ -26,6 +26,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# angular-Age_Calculator
->>>>>>> 902f6780e577d54f47a7bc2fe6a665d7f9934cd3
