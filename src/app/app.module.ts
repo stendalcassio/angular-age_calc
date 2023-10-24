@@ -6,19 +6,17 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/card/input/input.component';
 import { CardInfoComponent } from './components/card/card-info/card-info.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     InputComponent,
-    CardInfoComponent
+    CardInfoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

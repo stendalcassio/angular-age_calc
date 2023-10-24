@@ -1,8 +1,10 @@
 <div class="input">
   <label for="{{ labelFor }}">{{ labelText }}</label>
   <input
-    type="text"
+    type="number"
     id="{{ inputId }}"
+    [(ngModel)]="meuInput"
+    (input)="onInputChange(meuInput)"
     name="{{ inputName }}"
     placeholder="{{ inputPlaceholder }}"
   />

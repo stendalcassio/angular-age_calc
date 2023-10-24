@@ -2,40 +2,45 @@
   <form (ngSubmit)="onFormSubmit($event)">
     <div class="card__info">
       <app-input
-        labelText="Year"
-        labelFor="Year"
-        inputId="Year"
-        inputName="Year"
-        inputPlaceholder="YYYY"
+        (inputValueChange)="onInputValueChanged($event, 'day')"
+        labelText="Day"
+        labelFor="day"
+        inputId="day"
+        inputId="day"
+        inputName="day"
+        inputPlaceholder="DD"
       ></app-input>
       <app-input
+        (inputValueChange)="onInputValueChanged($event, 'month')"
         labelText="Month"
-        labelFor="Month"
-        inputId="Month"
-        inputName="Month"
+        labelFor="month"
+        inputId="month"
+        inputName="month"
         inputPlaceholder="MM"
       ></app-input>
       <app-input
-        labelText="Day"
-        labelFor="Day"
-        inputId="Day"
-        inputId="Day"
-        inputName="Day"
-        inputPlaceholder="DD"
+        (inputValueChange)="onInputValueChanged($event, 'year')"
+        labelText="year"
+        labelFor="year"
+        inputId="year"
+        inputName="year"
+        inputPlaceholder="YYYY"
       ></app-input>
     </div>
     <div class="card__sender">
       <div class="card__sender__content">
         <hr />
         <div class="card__button">
-          <button><img src="assets/icon-arrow.svg" alt="enviar" /></button>
+          <button type="submit">
+            <img src="assets/icon-arrow.svg" alt="enviar" />
+          </button>
         </div>
       </div>
     </div>
   </form>
   <div class="card__results">
-    <app-card-info dateInfo="years" dateTime="{{ dateTime }}"></app-card-info>
-    <app-card-info dateInfo="months" dateTime="{{ dateTime }}"></app-card-info>
-    <app-card-info dateInfo="days" dateTime="{{ dateTime }}"></app-card-info>
+    <app-card-info dateInfo="years" dateTime="{{ yearsDifference }}"></app-card-info>
+    <app-card-info dateInfo="months" dateTime="{{ monthsDifference }}"></app-card-info>
+    <app-card-info dateInfo="days" dateTime="{{ daysDifference }}"></app-card-info>
   </div>
 </div>
