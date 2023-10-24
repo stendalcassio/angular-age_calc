@@ -1,5 +1,7 @@
-<<<<<<< HEAD
 # Age Calculator
+
+![image](https://github.com/stendalcassio/angular-age_calc/assets/61715137/44109ed1-f88b-490e-ab5d-c35aab99f131)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
